@@ -1,0 +1,68 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/dada.avif);
+    background-size: cover;
+    background-position: right-buttom;
+    animation: anim 10s;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(33, 33, 83);
+    color: aqua;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+    border-radius: 120px 20px 125px 20px;
+    box-shadow: 2px 10px 17px 3px;
+    animation: scale 10s
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        border-radius: 0px 0px 0px 0px;
+        color: antiquewhite;
+        background-color: black;
+        opacity: 0.5;
+
+    }
+
+    100% {
+        transform: scale(1);
+        border-radius: 120px 20px 125px 20px;
+        color: aqua;
+        background-color: rgb(33, 33, 83);
+        box-shadow: 5px 15px 25px 5px;
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+        background-image: url(../img/image.png);
+        color: yellow;
+        box-shadow: 5px 15px 25px 5px;
+    }
+
+    100% {
+        transform: scale(1);
+        background-image: url(../img/dada.avif);
+    }
+}
